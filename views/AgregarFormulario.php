@@ -1,8 +1,3 @@
-<?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +16,7 @@ error_reporting(E_ALL);
 
             </div>
         </div>
-        <form action="Agregar.php" method="POST" class="p-4 ps-5">
+        <form action="../controllers/Agregar.php" method="POST" class="p-4 ps-5">
 
             <div class="form-group">
                 <label for="titulo">Título</label>
@@ -43,15 +38,6 @@ error_reporting(E_ALL);
             <a href="index.php" class="btn btn-danger mt-2">Regresar</a"></a>
         </form>
     </div>
-
-
-
-
-
-
-
-
-
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="s ha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>

@@ -1,8 +1,3 @@
-<?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -54,7 +49,7 @@ error_reporting(E_ALL);
                     ?>
                 </tbody>
             </table>
-            <a href="AgregarFormulario.php" class="btn btn-success mb-2 "">Agregar</a></a>
+            <a href="views/AgregaraFormulario.php" class="btn btn-success mb-2 ">Agregfwawafwafar</a></a>
        </div>
     </div>
 
