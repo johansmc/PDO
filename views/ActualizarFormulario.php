@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php 
-include './config/conexion.php';
+include '../config/conexion.php';
 
 $Id =($_GET['id']);
 $sql = $con->prepare("SELECT * FROM libros WHERE id = ?");
@@ -25,7 +25,7 @@ $libro = $sql->fetch();
 
             </div>
         </div>
-        <form action="Actualizar.php" method="POST" class="p-4 ps-5">
+        <form action="../controllers/Actualizar.php" method="POST" class="p-4 ps-5">
 
             <input type="hidden" name="id" value="<?php echo $libro['id']; ?>">
             <div class="form-group">
@@ -41,7 +41,7 @@ $libro = $sql->fetch();
                 <input type="text" class="form-control" id="descripcion" name="descripcion" value="<?php echo $libro['descripcion']; ?>">
             </div>
             <div class="form-group">
-                <label for="fecha">Fecha</label>
+                <label for="fecha">Año de publicación</label>
                 <input type="year" class="form-control" id="fecha" name="fecha" value="<?php echo $libro['fecha']; ?>">
             </div>
             <button type="submit" class="btn btn-success mt-2">Actualizar</button>

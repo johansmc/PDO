@@ -1,11 +1,11 @@
 <?php 
-include './config/conexion.php';
+include '../config/conexion.php';
 
 $Id =($_GET['id']);
-$sql = $con->prepare("DELETE FROM libros WHERE id = ?");
-$resultado = $sql->execute([$Id]);
+
+require_once("../models/modelEliminar.php");
 if ($resultado){
-    header("Location: index.php");
+    header("Location: ../index.php");
 }else{
     echo "Error al eliminar el libro";
 }

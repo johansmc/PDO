@@ -22,7 +22,7 @@
                         <th scope="col">Titulo</th>
                         <th scope="col">Autor</th>
                         <th scope="col">Descripción</th>
-                        <th scope="col">Fecha</th>
+                        <th scope="col">Año de publicacion</th>
                         <th scope="col">Acciones</th>
                     </tr>
                 </thead>
@@ -40,8 +40,8 @@
                             <td> <?php echo $row->descripcion?></td>
                             <td> <?php echo $row->fecha ?></td>
                             <td>
-                                <a href="ActualizarFormulario.php?id=<?= $row->id ?>" class="btn btn-warning mb-2">Editar</a>
-                                <a href="Eliminar.php?id=<?= $row->id ?>" class="btn btn-danger">Borrar</a>
+                                <a href="views/ActualizarFormulario.php?id=<?= $row->id ?>" class="btn btn-warning mb-2">Editar</a>
+                                <a href="controllers/Eliminar.php?id=<?= $row->id ?>" class="btn btn-danger">Borrar</a>
                             </td>
                         </tr>
                         <?php
@@ -49,7 +49,7 @@
                     ?>
                 </tbody>
             </table>
-            <a href="views/AgregaraFormulario.php" class="btn btn-success mb-2 ">Agregfwawafwafar</a></a>
+            <a href="views/AgregarFormulario.php" class="btn btn-success mb-2 ">Agregar</a></a>
        </div>
     </div>
 

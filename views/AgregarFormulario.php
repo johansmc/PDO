@@ -31,11 +31,11 @@
                 <input type="text" class="form-control" id="descripcion" name="descripcion">
             </div>
             <div class="form-group">
-                <label for="fecha">Fecha</label>
+                <label for="fecha">Año de publicación</label>
                 <input type="year" class="form-control" id="fecha" name="fecha">
             </div>
             <button type="submit" class="btn btn-success mt-2">Agregar</button>
-            <a href="index.php" class="btn btn-danger mt-2">Regresar</a"></a>
+            <a href="../index.php" class="btn btn-danger mt-2">Regresar</a"></a>
         </form>
     </div>
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
